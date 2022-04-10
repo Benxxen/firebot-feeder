@@ -31,6 +31,7 @@ const script: Firebot.CustomScript<Params> = {
 
     const axios = require('axios');
 
+    //NOTE: change url and data for arduino here
     axios.post('http://localhost:8080/', {
       firstName: 'Fred',
       lastName: 'Flintstone'

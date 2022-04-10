@@ -1,18 +1,8 @@
 # Starter Firebot Custom Script in Typescript
 
-### Setup
-1. Create a new repo based off this template (Click "Use this Template" above) or simply fork it
-2. `npm install`
-
-### Building
-Dev:
-1. `npm run build:dev`
-- Automatically copies the compiled .js to Firebot's scripts folder.
-
-Release:
-1. `npm run build`
-- Copy .js from `/dist`
-
-### Note
-- Keep the script definition object (that contains the `run`, `getScriptManifest`, and `getDefaultParameters` funcs) in the `index.ts` file as it's important those function names don't get minimized.
-- Edit the `"scriptOutputName"` property in `package.json` to change the filename of the outputted script.
+### Steps to get script
+1. npm install (install all package which are defined inside package.json once)
+2. change parameters inside main.ts line 34 with URL and data you want to send
+3. npm run build (compiles the script you are using inside firebot)
+4. copy feed-script.js from "dist" folder and put into firebot
+5. PARTY!
