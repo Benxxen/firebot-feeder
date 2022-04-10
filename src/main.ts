@@ -25,8 +25,23 @@ const script: Firebot.CustomScript<Params> = {
     };
   },
   run: (runRequest) => {
+    console.log("Test")
     const { logger } = runRequest.modules;
     logger.info(runRequest.parameters.message);
+
+    const axios = require('axios');
+
+    axios.post('http://localhost:8080/', {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
+    }).then(function (response: any) {
+
+      console.log(response)
+    })
+
+    .catch(function (error: any){
+      console.log(error)
+    })
   },
 };
 

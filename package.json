@@ -1,6 +1,6 @@
 {
   "name": "firebot-custom-script-starter",
-  "scriptOutputName": "starterScript",
+  "scriptOutputName": "feed-script",
   "version": "1.0.0",
   "description": "A starter Firebot custom script",
   "main": "",
@@ -23,5 +23,8 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^4.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
 }
